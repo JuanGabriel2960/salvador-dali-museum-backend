@@ -1,0 +1,22 @@
+name: Deploy to PROD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+        env:
+          HD_DATABASE_HOST: ${{secrets.DATABASE_HOST}}
+          HD_DATABASE_NAME: ${{secrets.DATABASE_NAME}}
+          HD_DATABASE_USERNAME: ${{secrets.DATABASE_USERNAME}}
+          HD_DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
