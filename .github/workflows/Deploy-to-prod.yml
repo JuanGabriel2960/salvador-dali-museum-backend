@@ -20,3 +20,6 @@ jobs:
           HD_DATABASE_NAME: ${{secrets.DATABASE_NAME}}
           HD_DATABASE_USERNAME: ${{secrets.DATABASE_USERNAME}}
           HD_DATABASE_PASSWORD: ${{secrets.DATABASE_PASSWORD}}
+          HD_CLOUDINARY_NAME: ${{secrets.CLOUDINARY_NAME}}
+          HD_CLOUDINARY_KEY: ${{secrets.CLOUDINARY_KEY}}
+          HD_CLOUDINARY_SECRET: ${{secrets.CLOUDINARY_SECRET}}
