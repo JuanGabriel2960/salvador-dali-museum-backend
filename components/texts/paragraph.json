@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_texts_paragraphs",
+  "info": {
+    "name": "paragraph",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
