@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "mains",
+  "info": {
+    "name": "main",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "paragraph": {
+      "type": "component",
+      "repeatable": true,
+      "component": "texts.paragraph"
+    }
+  }
+}
