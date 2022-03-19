@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "painting_details",
+  "info": {
+    "name": "painting_details",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "painting_id": {
+      "type": "uid",
+      "required": true
+    },
+    "painting": {
+      "via": "painting_detail",
+      "model": "painting"
+    },
+    "media": {
+      "type": "string",
+      "required": true
+    },
+    "dimensions": {
+      "type": "string",
+      "required": true
+    },
+    "video": {
+      "type": "string",
+      "required": true
+    },
+    "history": {
+      "type": "text",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
