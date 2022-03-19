@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/painting-details",
+      "handler": "painting-details.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/painting-details/count",
+      "handler": "painting-details.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/painting-details/:id",
+      "handler": "painting-details.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/painting-details",
+      "handler": "painting-details.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/painting-details/:id",
+      "handler": "painting-details.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/painting-details/:id",
+      "handler": "painting-details.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
